@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Aleksandra Urban</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div class="main-description">
+          <h2 class="job-title">Software Tester</h2>
+          <h1>Aleksandra Urban</h1>
+          <p class="description">
+            I am definitely distinguished by accuracy, meticulousness and independence in action. In the future I would like to develop Java Script. Inspired by the HTML+CSS+JavaScript Workshop, I explore the secrets of this issue. I will be happy to join your team, which I will be able to support with my skills, especially in the field of test data preparation, documentation and bug reporting.
+I am preparing to pass the ISTQB exam.
+
+          </p>
+        </div>
+
+        <div class="projects">
+          <h2 class="header-primary">Project</h2>
+          <ol class="list-primary">
+            <li>
+              <a
+                class="primary-list-item"
+                href="https://github.com/AleksandraUrbanGD/Mazovia.pl"
+                >Mazovia</a
+              ><span class="primary-list-item-3">..................................................</span>[<span
+                class="primary-list-item-3"
+                >IntelliJ, Selenium</span
+              >]
+            </li>
+            <li>
+              <a class="primary-list-item" href="https://rainbow-concha-5b017c.netlify.app/"
+                >Aleksandra Urban CV </a
+              ><span class="primary-list-item-3">................</span>[<span
+                class="primary-list-item-3"
+                >HTML + CSS</span
+                >]
+            </li>
+            <li>
+              <a class="primary-list-item" href="https://kidslike.goit.global/"
+                >Dopiero zaczynam</a
+              ><span class="primary-list-item-3">.........................</span
+              >[<span class="primary-list-item-3">JavaScript + HTML + CSS</span>]
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="header-primary">Education</h2>
+
+          <h3 class="job-name"> 
+            Software tester <span class="highlight-3"> <a class="primary-list-item-2" href=https://app.diplomasafe.com/pl-PL/diploma/dc91997e6fd6b4db79125e1ba1fc3e1c6ce3c1806
+              >certificate</a></span>
+          </h3>
+          
+
+          <p class="job-date">July 2022 - December 2022</p>
+
+          <ul class="job-list">
+            <li>
+              Test design techniques (21h)</li>
+              <li>Risk based testing (7h)</li>
+                <li>Testing classes (21h)</li>
+                  <li>Agile, Scrum (10h)</li>
+                    <li>Basics of databases (7h)</li>
+                      <li>Introduction to programming (14h)</li>
+                        <li>Testing in the BDD methodology (7h)</li>
+                          <li>Selenium WebDriver basics (7h)</li>
+                            <li>Final design (14h)</li>
+
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="job-name">
+            Masters - Nursing Medical University of Gdańsk 
+
+          </h3>
+          <p class="job-date"> October 2016 - June 2018 </p>
+          <ul class="job-list-2">
+            <li>
+              Making decisions in stressful situations
+            </li>
+
+            <li>Creative search for solutions</li>
+
+            <li>Creating workflow documentation</li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h2>Experience</h2>
+        
+          <h4>The owner of the Urban Beauty - beauty salon </h4>
+          <p class="job-date">May 2019 - December 2022 </p>
+          <ul class="job-list-2">
+            <li>
+              Human resource Management
+            </li>
+
+            <li> Managing the finances and documentation of the company</li>
+
+            <li>  Conducting trainings</li>
+          </ul>
+
+          <h4>Teacher at TEB for Education </h4>
+          <p class="job-date">October 2020 - the present moment</p>
+          <ul class="job-list-2">
+            <li>
+              Management of the team, orders and documentation
+            </li>
+
+            <li> Documentation of learning progress</li>
+
+            <li>  Realizing material as required</li>
+          </ul>
+        </div>
+      </main>
+
+      <aside>
+        <img
+          class="cv-photo"
+          src="photo.png"
+          width="370"
+          alt="Zdjęcie Aleksandry Urban"
+        />
+
+        <div class="contact-block">
+          <h2 class="header-secondary">Contacts</h2>
+
+          <p class="contact-links">
+            <span class="bold">C:</span>
+            <a class="contact-links" href="tel:+48531403849">
+              +48 531 403 849</a
+            >
+            <br />
+            <span class="bold">E:</span>
+            <a class="contact-links" href="mailto:aleksandra.urban93@gmail.com"
+              >aleksandra.urban93@gmail.com</a
+            >
+            <br />
+            <a
+                class="Contacts-links"
+                href="https://www.linkedin.com/in/olaurban/"
+                >Linkedin - profil</a>
+
+            <br />
+            <a
+
+                class="Contacts-links"
+                href="https://github.com/AleksandraUrbanGD"
+                >Repository - link</a>
+             
+          
+          </p>
+        </div>
+
+        <div class="tech-skills-block">
+          <h2 class="header-secondary">Tech Skills</h2>
+
+          <ul class="list-secondary">
+            <li><span class="list-secondary-items">creating plans and test cases</span></li>
+            <li><span class="list-secondary-items">implementation of manual tests - error reporting, error analysis and reporting</span></li>
+            <li><span class="list-secondary-items">Selenium SQL database</span></li>
+            <li><span class="list-secondary-items">Jira, TestRail, X-Ray</span></li>
+            <li><span class="list-secondary-items">Postman (API, tests) GIT</span></li>
+            <li><span class="list-secondary-items">HTML+CSS, Prettier</span></li>
+        
+          </ul>
+        </div>
+
+        <div class="tech-skills-block">
+          <h2 class="header-secondary">Certificates</h2>
+
+          <ul class="list-secondary">
+            <li><span class="list-secondary-items">StacjaIT - basic POSTMAN 08.2022</span></li>
+            <li><span class="list-secondary-items">UDEMY - Oracle SQL 09.2022</span></li>
+            <li><span class="list-secondary-items">GO IT - HTML + CSS  10.2022</span></li>
+            <li><span class="list-secondary-items">TeachMeSkills -HTML+CSS+JavaScript -  11.2022</span></li>
+            <li><span class="list-secondary-items">Stacja IT - "Tworzenie testów API przy użyciu Javy" 11.2022</span></li>
+        
+          </ul>
+        </div>
+
+        <div class="tech-skills-block">
+          <h2 class="header-secondary">Soft Skills</h2>
+
+          <ul class="list-secondary">
+            <li><span class="list-secondary-items">Scrum, Agile, Teamwork</span></li>
+            <li><span class="list-secondary-items">creative problem solving</span></li>
+            <li><span class="list-secondary-items">attention to detail</span></li>
+            <li><span class="list-secondary-items">the ability to acquire knowledge quickly</span></li>
+            <li><span class="list-secondary-items">striving for perfection</span></li>
+            <li><span class="list-secondary-items">openness to new technologies</span></li>
+          </ul>
+        </div>
+
+        <div class="tech-skills-block">
+          <h2 class="header-secondary">Language</h2>
+
+          <ul class="list-secondary">
+            <li><span class="list-secondary-items">English level B1/B2</span></li>
+            
+          </ul>
+        </div>
+
+        <div class="tech-skills-block">
+          <h2 class="header-secondary">Interested</h2>
+
+          <ul class="list-secondary">
+            <li><span class="list-secondary-items"> computer games RPG</span></li>
+            <li><span class="list-secondary-items">marketing in social media</span></li>
+            <li><span class="list-secondary-items">graphic processing photoshop</span></li>
+          
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
