@@ -41,7 +41,7 @@ I am preparing to pass the ISTQB exam.
               >]
             </li>
             <li>
-              <a class="primary-list-item" href="https://rainbow-concha-5b017c.netlify.app/"
+              <a class="primary-list-item" href="https://github.com/AleksandraUrbanGD/MyCV-HTML-CSS"
                 >Aleksandra Urban CV </a
               ><span class="primary-list-item-3">................</span>[<span
                 class="primary-list-item-3"
@@ -133,7 +133,7 @@ I am preparing to pass the ISTQB exam.
       <aside>
         <img
           class="cv-photo"
-          src="photo.png"
+          src="photo.jpg"
           width="370"
           alt="Zdjęcie Aleksandry Urban"
         />
@@ -144,7 +144,7 @@ I am preparing to pass the ISTQB exam.
           <p class="contact-links">
             <span class="bold">C:</span>
             <a class="contact-links" href="tel:+48000000000">
-              +48 531 403 849</a
+              +48 000000000</a
             >
             <br />
             <span class="bold">E:</span>
