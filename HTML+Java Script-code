@@ -13,16 +13,89 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <SPAN id="Data" style="POSITION: absolute; RIGHT: 0; TOP: 0; FONT-SIZE: 10pt;
+FONT-WEIGHT: bold; COLOR: #012345; FONT-FAMILY: Verdana, Arial;"></SPAN>
+<script>
+
+function czas() {
+
+ if (!document.layers&&!document.getElementById&&!document.all)
+ return
+
+  var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+  dzisiaj = new Date();
+  godzina=dzisiaj.getHours();
+  minuty=dzisiaj.getMinutes();
+  sekundy=dzisiaj.getSeconds();
+  rok=dzisiaj.getYear();
+  dzien=dzisiaj.getDate();
+  licz_dzien=dzisiaj.getDay();
+  if (licz_dzien==0) {tekst_dzien="Niedziela"}
+  if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+  if (licz_dzien==2) {tekst_dzien="Wtorek"}
+  if (licz_dzien==3) {tekst_dzien="Środa"}
+  if (licz_dzien==4) {tekst_dzien="Czwartek"}
+  if (licz_dzien==5) {tekst_dzien="Piątek"}
+  if (licz_dzien==6) {tekst_dzien="Sobota"}
+  miesiac=dzisiaj.getMonth()+1;
+  if (miesiac==1) {tekst_miesiac="stycznia"}
+  if (miesiac==2) {tekst_miesiac="lutego"}
+  if (miesiac==3) {tekst_miesiac="marca"}
+  if (miesiac==4) {tekst_miesiac="kwietnia"}
+  if (miesiac==5) {tekst_miesiac="maja"}
+  if (miesiac==6) {tekst_miesiac="czerwca"}
+  if (miesiac==7) {tekst_miesiac="lipca"}
+  if (miesiac==8) {tekst_miesiac="sierpnia"}
+  if (miesiac==9) {tekst_miesiac="września"}
+  if (miesiac==10) {tekst_miesiac="października"}
+  if (miesiac==11) {tekst_miesiac="listopada"}
+  if (miesiac==12) {tekst_miesiac="grudnia"}
+         if ((rok>=00) && (rok<=1900)) {rok=1900+rok;}
+         if (miesiac < 10) {miesiac="0"+miesiac;}
+         if (dzien < 10) {dzien="0"+dzien;}
+         if (godzina < 10) {godzina="0"+godzina;}
+         if (minuty < 10) {minuty="0"+minuty;}
+         if (sekundy < 10) {sekundy="0"+sekundy;}
+  pelnyczas=tekst_dzien + ", " + dzien + " " + tekst_miesiac + " "+rok+"<br>"
+        + godzina+":"+minuty+":"+sekundy;
+
+
+if (document.getElementById){
+document.getElementById("Data").innerHTML=pelnyczas
+}
+else if (document.layers){
+document.layers.Data.document.write(pelnyczas)
+}
+else if (document.all)
+Data.innerHTML=pelnyczas
+
+// Czestotliwosc odswiezania
+setTimeout("czas()",500)
+}
+
+</script>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+  <!-- Ukrycie przed przeglądarkami nie obsługującymi JavaScriptów
+  function zmien_strone(index)
+  {
+    if (document.odnosniki.lista[index].value != "brak"){
+        location.href = document.odnosniki.lista[index].value;
+    }
+  }
+  // Koniec kodu JavaScript -->
+  </SCRIPT>
   </head>
   <body>
+
+    <body onLoad="czas()">
+
     <div class="wrapper">
       <main>
         <div class="main-description">
-          <h2 class="job-title">Software Tester</h2>
-          <h1>Aleksandra Urban</h1>
+          <h2 class="job-title">Junior front-end developer</h2>
+          <h1>Aleksandra Urban </h1>
           <p class="description">
-            I am definitely distinguished by accuracy, meticulousness and independence in action. In the future I would like to develop Java Script. Inspired by the HTML+CSS+JavaScript Workshop, I explore the secrets of this issue. I will be happy to join your team, which I will be able to support with my skills, especially in the field of test data preparation, documentation and bug reporting.
-I am preparing to pass the ISTQB exam.
+            I am definitely distinguished by accuracy, meticulousness and independence in action. In the future, I would like to develop myself in Python. Inspired by the "Full Stack Developer" Workshop, I explore the secrets of JavaScript. I will be happy to join a team that I will be able to support with my skills, especially in the field of developing detailed technical documentation of the produced source code, implementation and implementation of new frontend functionalities.
 
           </p>
         </div>
@@ -30,35 +103,56 @@ I am preparing to pass the ISTQB exam.
         <div class="projects">
           <h2 class="header-primary">Project</h2>
           <ol class="list-primary">
+            
+            <li>
+              <a class="primary-list-item" href="https://github.com/AleksandraUrbanGD/MyCV-HTML-CSS" target="_blank"
+                >Aleksandra Urban CV </a
+              ><span class="primary-list-item-3">................</span>[<span
+                class="primary-list-item-3"
+                >HTML + CSS + JavaScript</span
+                >]
+            </li>
+            
             <li>
               <a
                 class="primary-list-item"
-                href="https://github.com/AleksandraUrbanGD/Mazovia.pl"
+                href="https://github.com/AleksandraUrbanGD/Mazovia.pl" target="_blank"
                 >Mazovia</a
               ><span class="primary-list-item-3">..................................................</span>[<span
                 class="primary-list-item-3"
                 >IntelliJ, Selenium</span
               >]
             </li>
-            <li>
-              <a class="primary-list-item" href="https://github.com/AleksandraUrbanGD/MyCV-HTML-CSS"
-                >Aleksandra Urban CV </a
-              ><span class="primary-list-item-3">................</span>[<span
-                class="primary-list-item-3"
-                >HTML + CSS</span
-                >]
-            </li>
-            <li>
-              <a class="primary-list-item" href="https://kidslike.goit.global/"
-                >Dopiero zaczynam</a
-              ><span class="primary-list-item-3">.........................</span
-              >[<span class="primary-list-item-3">JavaScript + HTML + CSS</span>]
-            </li>
           </ol>
         </div>
 
         <div>
           <h2 class="header-primary">Education</h2>
+
+          <h3 class="job-name"> 
+            Front-end developer <span class="highlight-3"> 
+          </h3>
+          <p class="job-date">December 2022 - at the moment </p>
+          <p class="job-date">Mentoring Arkadiusz Włodarczyk </p>
+          
+
+
+          
+          
+          
+          
+
+          <ul class="job-list">
+            <li>
+              HTML + CSS + JavaScript</li>
+              <li>Ajax, JSON, jQuery</li>
+                <li>events, variables, objects, arrays, functions, loops, conditional statements</li>
+                  <li> DOM, RegExp, Cookies, tooltip</li>
+                    <li>Error handling and code debugging</li>
+                      
+                        
+
+          </ul>
 
           <h3 class="job-name"> 
             Software tester <span class="highlight-3"> <a class="primary-list-item-2" href=https://app.diplomasafe.com/pl-PL/diploma/dc91997e6fd6b4db79125e1ba1fc3e1c6ce3c1806
@@ -68,17 +162,18 @@ I am preparing to pass the ISTQB exam.
 
           <p class="job-date">July 2022 - December 2022</p>
 
+          
+      
+
           <ul class="job-list">
             <li>
-              Test design techniques (21h)</li>
-              <li>Risk based testing (7h)</li>
-                <li>Testing classes (21h)</li>
-                  <li>Agile, Scrum (10h)</li>
-                    <li>Basics of databases (7h)</li>
-                      <li>Introduction to programming (14h)</li>
-                        <li>Testing in the BDD methodology (7h)</li>
-                          <li>Selenium WebDriver basics (7h)</li>
-                            <li>Final design (14h)</li>
+              Testing classes</li>
+              <li>Agile, Scrum</li>
+                <li>Database basics</li>
+                  <li> Introduction to programming</li>
+                    <li>Testing in the BDD methodology</li>
+                      <li>Basics of Selenium WebDriver</li>
+                        
 
           </ul>
         </div>
@@ -143,8 +238,8 @@ I am preparing to pass the ISTQB exam.
 
           <p class="contact-links">
             <span class="bold">C:</span>
-            <a class="contact-links" href="tel:+48000000000">
-              +48 000000000</a
+            <a class="contact-links" href="tel:+48531403849">
+              +48 531 403 849</a
             >
             <br />
             <span class="bold">E:</span>
@@ -172,12 +267,12 @@ I am preparing to pass the ISTQB exam.
           <h2 class="header-secondary">Tech Skills</h2>
 
           <ul class="list-secondary">
-            <li><span class="list-secondary-items">creating plans and test cases</span></li>
-            <li><span class="list-secondary-items">implementation of manual tests - error reporting, error analysis and reporting</span></li>
+            <li><span class="list-secondary-items">HTML+CSS + JavaScript, Prettier</span></li>
+            <li><span class="list-secondary-items">Postman (API, tests) GITHub</span></li>
+    
             <li><span class="list-secondary-items">Selenium SQL database</span></li>
             <li><span class="list-secondary-items">Jira, TestRail, X-Ray</span></li>
-            <li><span class="list-secondary-items">Postman (API, tests) GIT</span></li>
-            <li><span class="list-secondary-items">HTML+CSS, Prettier</span></li>
+           
         
           </ul>
         </div>
@@ -186,6 +281,8 @@ I am preparing to pass the ISTQB exam.
           <h2 class="header-secondary">Certificates</h2>
 
           <ul class="list-secondary">
+            <li><span class="list-secondary-items">Udemy - Website Development Course in HTML and CSS 01.2023</span></li>
+            <li><span class="list-secondary-items">Udemy - JavaScript 01.2023</span></li>
             <li><span class="list-secondary-items">StacjaIT - basic POSTMAN 08.2022</span></li>
             <li><span class="list-secondary-items">UDEMY - Oracle SQL 09.2022</span></li>
             <li><span class="list-secondary-items">GO IT - HTML + CSS  10.2022</span></li>
@@ -219,13 +316,22 @@ I am preparing to pass the ISTQB exam.
 
         <div class="tech-skills-block">
           <h2 class="header-secondary">Interested</h2>
+    
+          <FORM NAME="odnosniki">
+          <SELECT NAME="lista"
+            onChange="zmien_strone(lista.selectedIndex)"
+            SIZE = "1">
+            <OPTION VALUE="brak">choose a side
+            <OPTION VALUE="https://www.leagueoflegends.com/pl-pl/">League of legends
+            <OPTION VALUE="https://manux.pl/jak-zrobic/jak-rozpoczac-przygode-z-akwarelami/">Watercolor painting
+            <OPTION VALUE="https://testosterone.pl/wiedza/kobiety-a-trening-silowy/"> Training - workout
+	
 
-          <ul class="list-secondary">
-            <li><span class="list-secondary-items"> computer games RPG</span></li>
-            <li><span class="list-secondary-items">marketing in social media</span></li>
-            <li><span class="list-secondary-items">graphic processing photoshop</span></li>
+
+          </SELECT>
+          </FORM>
+          </H2>
           
-          </ul>
         </div>
       </aside>
     </div>
