@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,80 +15,14 @@
     />
     <SPAN id="Data" style="POSITION: absolute; RIGHT: 0; TOP: 0; FONT-SIZE: 10pt;
 FONT-WEIGHT: bold; COLOR: #012345; FONT-FAMILY: Verdana, Arial;"></SPAN>
-<script>
 
-function czas() {
-
- if (!document.layers&&!document.getElementById&&!document.all)
- return
-
-  var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
-  dzisiaj = new Date();
-  godzina=dzisiaj.getHours();
-  minuty=dzisiaj.getMinutes();
-  sekundy=dzisiaj.getSeconds();
-  rok=dzisiaj.getYear();
-  dzien=dzisiaj.getDate();
-  licz_dzien=dzisiaj.getDay();
-  if (licz_dzien==0) {tekst_dzien="Niedziela"}
-  if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
-  if (licz_dzien==2) {tekst_dzien="Wtorek"}
-  if (licz_dzien==3) {tekst_dzien="Środa"}
-  if (licz_dzien==4) {tekst_dzien="Czwartek"}
-  if (licz_dzien==5) {tekst_dzien="Piątek"}
-  if (licz_dzien==6) {tekst_dzien="Sobota"}
-  miesiac=dzisiaj.getMonth()+1;
-  if (miesiac==1) {tekst_miesiac="stycznia"}
-  if (miesiac==2) {tekst_miesiac="lutego"}
-  if (miesiac==3) {tekst_miesiac="marca"}
-  if (miesiac==4) {tekst_miesiac="kwietnia"}
-  if (miesiac==5) {tekst_miesiac="maja"}
-  if (miesiac==6) {tekst_miesiac="czerwca"}
-  if (miesiac==7) {tekst_miesiac="lipca"}
-  if (miesiac==8) {tekst_miesiac="sierpnia"}
-  if (miesiac==9) {tekst_miesiac="września"}
-  if (miesiac==10) {tekst_miesiac="października"}
-  if (miesiac==11) {tekst_miesiac="listopada"}
-  if (miesiac==12) {tekst_miesiac="grudnia"}
-         if ((rok>=00) && (rok<=1900)) {rok=1900+rok;}
-         if (miesiac < 10) {miesiac="0"+miesiac;}
-         if (dzien < 10) {dzien="0"+dzien;}
-         if (godzina < 10) {godzina="0"+godzina;}
-         if (minuty < 10) {minuty="0"+minuty;}
-         if (sekundy < 10) {sekundy="0"+sekundy;}
-  pelnyczas=tekst_dzien + ", " + dzien + " " + tekst_miesiac + " "+rok+"<br>"
-        + godzina+":"+minuty+":"+sekundy;
-
-
-if (document.getElementById){
-document.getElementById("Data").innerHTML=pelnyczas
-}
-else if (document.layers){
-document.layers.Data.document.write(pelnyczas)
-}
-else if (document.all)
-Data.innerHTML=pelnyczas
-
-// Czestotliwosc odswiezania
-setTimeout("czas()",500)
-}
-
-</script>
-<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
-  <!-- Ukrycie przed przeglądarkami nie obsługującymi JavaScriptów
-  function zmien_strone(index)
-  {
-    if (document.odnosniki.lista[index].value != "brak"){
-        location.href = document.odnosniki.lista[index].value;
-    }
-  }
-  // Koniec kodu JavaScript -->
-  </SCRIPT>
   </head>
-  <body>
+    <header></header>
+  <main></main>
 
     <body onLoad="czas()">
-
+   
+<!--section about -->
     <div class="wrapper">
       <main>
         <div class="main-description">
@@ -100,10 +34,21 @@ setTimeout("czas()",500)
           </p>
         </div>
 
+<!--section  projects-->
         <div class="projects">
           <h2 class="header-primary">Project</h2>
           <ol class="list-primary">
-            
+            <li>
+              <a
+                class="primary-list-item"
+                href="https://github.com/AleksandraUrbanGD/.urban" target="_blank"
+                >.URBAN</a
+              ><span class="primary-list-item-3">....................................................</span>[<span
+                class="primary-list-item-3"
+                >HTML + CSS + JavaScript </span
+              >]
+            </li>
+
             <li>
               <a class="primary-list-item" href="https://github.com/AleksandraUrbanGD/MyCV-HTML-CSS" target="_blank"
                 >Aleksandra Urban CV </a
@@ -112,7 +57,7 @@ setTimeout("czas()",500)
                 >HTML + CSS + JavaScript</span
                 >]
             </li>
-            
+          
             <li>
               <a
                 class="primary-list-item"
@@ -123,17 +68,21 @@ setTimeout("czas()",500)
                 >IntelliJ, Selenium</span
               >]
             </li>
+
+         
+
           </ol>
         </div>
 
+<!--section  education -->
         <div>
           <h2 class="header-primary">Education</h2>
 
           <h3 class="job-name"> 
             Front-end developer <span class="highlight-3"> 
           </h3>
-          <p class="job-date">December 2022 - at the moment </p>
-          <p class="job-date">Mentoring Arkadiusz Włodarczyk </p>
+          <p class="job-date">September 2022 - at the moment</p>
+          <p class="job-date"></p>
           
 
 
@@ -195,6 +144,7 @@ setTimeout("czas()",500)
           </ul>
         </div>
 
+<!--section  Experience-->
 
         <div>
           <h2>Experience</h2>
@@ -224,11 +174,12 @@ setTimeout("czas()",500)
           </ul>
         </div>
       </main>
+    
 
       <aside>
         <img
           class="cv-photo"
-          src="photo.jpg"
+          src="./img/photo.jpg"
           width="370"
           alt="Zdjęcie Aleksandry Urban"
         />
@@ -265,13 +216,17 @@ setTimeout("czas()",500)
 
         <div class="tech-skills-block">
           <h2 class="header-secondary">Tech Skills</h2>
-
+         
+          
+       
           <ul class="list-secondary">
-            <li><span class="list-secondary-items">HTML+CSS + JavaScript, Prettier</span></li>
+            <li><span class="list-secondary-items"> HTML + CSS + JavaScript</span></li>
+            <li><span class="list-secondary-items"> Visual Studio Code, Prettier</span></li>
             <li><span class="list-secondary-items">Postman (API, tests) GITHub</span></li>
-    
             <li><span class="list-secondary-items">Selenium SQL database</span></li>
             <li><span class="list-secondary-items">Jira, TestRail, X-Ray</span></li>
+            <li><span class="list-secondary-items"> Error handling and code debugging</span></li>
+            
            
         
           </ul>
@@ -283,12 +238,13 @@ setTimeout("czas()",500)
           <ul class="list-secondary">
             <li><span class="list-secondary-items">Udemy - Website Development Course in HTML and CSS 01.2023</span></li>
             <li><span class="list-secondary-items">Udemy - JavaScript 01.2023</span></li>
-            <li><span class="list-secondary-items">StacjaIT - basic POSTMAN 08.2022</span></li>
-            <li><span class="list-secondary-items">UDEMY - Oracle SQL 09.2022</span></li>
-            <li><span class="list-secondary-items">GO IT - HTML + CSS  10.2022</span></li>
+            
             <li><span class="list-secondary-items">TeachMeSkills -HTML+CSS+JavaScript -  11.2022</span></li>
             <li><span class="list-secondary-items">Stacja IT - "Tworzenie testów API przy użyciu Javy" 11.2022</span></li>
-        
+            <li><span class="list-secondary-items">GO IT - HTML + CSS  10.2022</span></li>
+            <li><span class="list-secondary-items">UDEMY - Oracle SQL 09.2022</span></li>
+            
+            <li><span class="list-secondary-items">StacjaIT - basic POSTMAN 08.2022</span></li>
           </ul>
         </div>
 
@@ -316,24 +272,17 @@ setTimeout("czas()",500)
 
         <div class="tech-skills-block">
           <h2 class="header-secondary">Interested</h2>
-    
-          <FORM NAME="odnosniki">
-          <SELECT NAME="lista"
-            onChange="zmien_strone(lista.selectedIndex)"
-            SIZE = "1">
-            <OPTION VALUE="brak">choose a side
-            <OPTION VALUE="https://www.leagueoflegends.com/pl-pl/">League of legends
-            <OPTION VALUE="https://manux.pl/jak-zrobic/jak-rozpoczac-przygode-z-akwarelami/">Watercolor painting
-            <OPTION VALUE="https://testosterone.pl/wiedza/kobiety-a-trening-silowy/"> Training - workout
-	
+          <ul class="list-secondary">
+          <li><span class="list-secondary-items">technological news</span></li>
+          <li><span class="list-secondary-items">handicraft</span></li>
+          <li><span class="list-secondary-items">computer games</span></li>
+        </ul>
 
-
-          </SELECT>
-          </FORM>
-          </H2>
-          
         </div>
       </aside>
     </div>
+  </main>
+<footer></footer>
+ 
   </body>
 </html>
